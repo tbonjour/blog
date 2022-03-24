@@ -14,8 +14,10 @@ I won't go into as much detail as a SRS. For now, I will list a bunch of feature
 3. Add a `now` page. Inspired by [Derek Sivers]. Maybe also have a page that lists my current (personal) projects and what I would like to work on in the future. 
     1. Get listed on [nownownow].
 4. Add a tags page.
+5. Create a dark-mode for the [website].
 
 
 
 [Derek Sivers]: https://sive.rs/nowff
 [nownownow]: https://nownownow.com/about
+[website]: https://trevorbonjour.me
