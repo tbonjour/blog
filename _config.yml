@@ -18,19 +18,51 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Trevor's Blog
-email: tbonjour@purdue.edu
+title: Trevor Bonjour
+author:
+  name: Trevor Bonjour
+  email: tbonjour@purdue.edu
+
 description: >- # this means to ignore newlines until "baseurl:"
-  A personal blog where I talk about my work and thoughts about my PhD. Topics include but are not
-  limited to: Reinforcement Learning, Machine Learning, Aritificial Intelligence, Causal Inference,
-  Philosophy of Science.   
+  A personal blog and a public journal.
+# about my PhD. Topics include but are not
+# limited to: Reinforcement Learning, Machine Learning, Aritificial Intelligence, Causal Inference,
+# Philosophy of Science.   
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://trevorbonjour.me" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  tbonjour
+minima:
+  social_links:
+    github: tbonjour
+    linkedin: trevor-bonjour
+    # devto: jekyll
+    # dribbble: jekyll
+    # facebook: jekyll
+    # flickr:   jekyll
+    # instagram: jekyll
+    # linkedin: jekyll
+    # pinterest: jekyll
+    # youtube: jekyll
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+    # keybase: jekyll
+
+#Set permalink. Permalinks are the output path for your pages, posts, or collections.
+permalink: /:categories/:title/
+
+
+# Set show_excerpts: true to display posts’ excerpts on the home page.
+# show_excerpts: true
 
 # Build settings
 theme: minima
+# theme: minimal-mistakes-jekyll # NOT WORKING FOR SOME REASON
+# remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
 plugins:
   - jekyll-feed
 

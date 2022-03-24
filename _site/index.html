@@ -3,25 +3,76 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Your awesome title | Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</title>
-<meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="Your awesome title" />
+<title>Trevor Bonjour | A personal blog and a public journal.</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Trevor Bonjour" />
+<meta name="author" content="Trevor Bonjour" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Your awesome title" />
+<meta name="description" content="A personal blog and a public journal." />
+<meta property="og:description" content="A personal blog and a public journal." />
+<link rel="canonical" href="http://localhost:4000/blog/" />
+<meta property="og:url" content="http://localhost:4000/blog/" />
+<meta property="og:site_name" content="Trevor Bonjour" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Your awesome title" />
+<meta property="twitter:title" content="Trevor Bonjour" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","headline":"Your awesome title","name":"Your awesome title","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Trevor Bonjour"},"description":"A personal blog and a public journal.","headline":"Trevor Bonjour","name":"Trevor Bonjour","url":"http://localhost:4000/blog/"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" /></head>
-<body><header class="site-header" role="banner">
+<link id = "mytheme" rel="stylesheet" href="/blog/assets/css/style.css">
+  
+  <script src="/blog/assets/scripts/mode-switcher.js"></script>
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Your awesome title</a><nav class="site-nav">
+  <!-- <script>
+    // let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
+    let theme = sessionStorage.getItem('theme');
+    sessionStorage.setItem('theme', 'light');
+
+    console.log('HEAD')
+    console.log(theme)
+    // console.log('HEAD')
+    // console.log(systemInitiatedDark)
+    if (theme === "dark") {
+        mytheme.setAttribute('href', '/blog/assets/css/dark.css');
+      sessionStorage.setItem('theme', 'dark');
+      // document.getElementById("theme-toggle").innerHTML = "Light Mode";
+
+    } else if (theme === "light") {
+        mytheme.setAttribute('href', '/blog/assets/css/style.css');
+      sessionStorage.setItem('theme', 'light');
+        // document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+    }
+  </script> -->
+  <!-- <script src="/scripts/mode-switcher.js"></script> -->
+  <!-- <script src="/blog/assets/scripts/mode-switcher.js"></script> -->
+  <!-- <script>
+    function toggleTheme() {
+
+    // Obtains an array of all <link> elements.
+    // Select your element using indexing.
+    // console.log(4);
+    // document.getElementById('mytheme').setAttribute('href','/blog/assets/css/dark.css');
+    var theme = document.getElementById('mytheme')
+    let stored_theme = sessionStorage.getItem('stored_theme');
+    // Change the value of href attribute 
+
+    // to change the css sheet.
+    // theme.setAttribute("href", "/blog/assets/css/dark.css");
+
+    if (theme.getAttribute('href') == "/blog/assets/css/style.css") {
+
+        theme.setAttribute('href', "/blog/assets/css/dark.css");
+        sessionStorage.setItem('stored_theme', 'dark');
+      } else {
+        theme.setAttribute('href', "/blog/assets/css/style.css");
+        sessionStorage.setItem('stored_theme', 'light');
+      }
+    }
+  </script> 
+ --><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="Trevor Bonjour" />
+</head>
+<body><header class="site-header">
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">Trevor Bonjour</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -31,47 +82,75 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
-      </nav></div>
+        <div class="trigger"><a class="page-link" href="/blog/about/">About</a><a class="page-link" href="/blog/personal/">Personal</a><a class="page-link" href="/blog/technical/">Technical</a><!--           <a id="theme-toggle" onclick="modeSwitcher()">TEST</a>
+ -->    
+ <a class="page-link" href="" onclick="modeSwitcher()">Change Mode</a>    
+</div>
+      </nav>
+      <!-- <button onclick="toggleTheme()">
+        Switch
+      </button> -->
+      <!-- <a style = "text-align: center" id="theme-toggle" onclick="modeSwitcher()">Mode</a> -->
+      <!-- <input onclick="modeSwitcher()" type="checkbox"> --></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <div class="home">
-<h2 class="post-list-heading">Posts</h2>
-    <ul class="post-list"><li><span class="post-meta">Mar 17, 2022</span>
-        <h3>
-          <a class="post-link" href="/jekyll/update/2022/03/17/welcome-to-jekyll.html">
-            Welcome to Jekyll!
-          </a>
-        </h3></li></ul>
 
-    <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p></div>
+
+
+  <ul class="post-list"><li> &nbsp; 
+        <a class="post-link" style="text-align:left;" href="/blog/personal/You-may-contribute-a-verse/">You may contribute a verse</a>
+        <span class="post-meta" style="float:right;">23 Mar 2022</span></li><li> &nbsp; 
+        <a class="post-link" style="text-align:left;" href="/blog/technical/test-cat/">How to make a multi-blog using jekyll</a>
+        <span class="post-meta" style="float:right;">22 Mar 2022</span></li></ul>
+
+    </div>
 
       </div>
     </main><footer class="site-footer h-card">
-  <data class="u-url" href="/"></data>
+  <data class="u-url" href="/blog/"></data>
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Your awesome title</h2>
-
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
+      <div class="footer-col">
+        <!-- <p class="feed-subscribe">
+          <a href="/blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p> -->
         <ul class="contact-list">
-          <li class="p-name">Your awesome title</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul>
+          <li class="p-name">Trevor Bonjour</li>
+          <li><a class="u-email" href="mailto:tbonjour@purdue.edu">tbonjour@purdue.edu</a></li>
+        </ul>
       </div>
-
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
+      <div class="social-links"><ul class="social-media-list"><a rel="me" href="https://github.com/tbonjour" target="_blank" title="tbonjour"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a><a rel="me" href="https://www.linkedin.com/in/trevor-bonjour" target="_blank" title="trevor-bonjour"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#linkedin"></use></svg></a></ul>
 </div>
-
-      <div class="footer-col footer-col-3">
-        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+      <div class="footer-col">
+        <p>A personal blog and a public journal.</p>
       </div>
     </div>
+
+    
 
   </div>
 
 </footer>
+<!-- <script>
+  // this checks whether system dark mode is set 
+  let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
+  // this checks for session storage telling to override
+  // the system preferences 
+  let theme = sessionStorage.getItem('theme');
+</script>
+ -->
+<!--  console.log("/blog/assets/css/style.css") -->
+
+<!-- <script src="/blog/assets/scripts/mode-switcher.js"></script>
+ -->
 </body>
 
 </html>

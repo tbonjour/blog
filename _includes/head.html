@@ -1,0 +1,65 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  <link id = "mytheme" rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  
+  <script src="{{ "/assets/scripts/mode-switcher.js" | relative_url }}"></script>
+
+  <!-- <script>
+    // let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
+    let theme = sessionStorage.getItem('theme');
+    sessionStorage.setItem('theme', 'light');
+
+    console.log('HEAD')
+    console.log(theme)
+    // console.log('HEAD')
+    // console.log(systemInitiatedDark)
+    if (theme === "dark") {
+        mytheme.setAttribute('href', '/blog/assets/css/dark.css');
+      sessionStorage.setItem('theme', 'dark');
+      // document.getElementById("theme-toggle").innerHTML = "Light Mode";
+
+    } else if (theme === "light") {
+        mytheme.setAttribute('href', '/blog/assets/css/style.css');
+      sessionStorage.setItem('theme', 'light');
+        // document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+    }
+  </script> -->
+  <!-- <script src="/scripts/mode-switcher.js"></script> -->
+  <!-- <script src="{{ "/assets/scripts/mode-switcher.js" | relative_url }}"></script> -->
+  <!-- <script>
+    function toggleTheme() {
+
+    // Obtains an array of all <link> elements.
+    // Select your element using indexing.
+    // console.log(4);
+    // document.getElementById('mytheme').setAttribute('href','/blog/assets/css/dark.css');
+    var theme = document.getElementById('mytheme')
+    let stored_theme = sessionStorage.getItem('stored_theme');
+    // Change the value of href attribute 
+
+    // to change the css sheet.
+    // theme.setAttribute("href", "{{ "/assets/css/dark.css" | relative_url }}");
+
+    if (theme.getAttribute('href') == "{{ "/assets/css/style.css" | relative_url }}") {
+
+        theme.setAttribute('href', "{{ "/assets/css/dark.css" | relative_url }}");
+        sessionStorage.setItem('stored_theme', 'dark');
+      } else {
+        theme.setAttribute('href', "{{ "/assets/css/style.css" | relative_url }}");
+        sessionStorage.setItem('stored_theme', 'light');
+      }
+    }
+  </script> 
+ -->
+
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+
+  {%- include custom-head.html -%}
+  
+</head>
