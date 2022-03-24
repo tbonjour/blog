@@ -11,13 +11,16 @@ I won't go into as much detail as a SRS. For now, I will list a bunch of feature
 ### Requirements:
 1. ~~Differentiate between different types of posts. For instance, keep the technical blog posts separate from the personal posts.~~
 2. ~~Toggle dark mode.~~ Add a toggle button instead of text link. 
-3. Add a `now` page. Inspired by [Derek Sivers]. Maybe also have a page that lists my current (personal) projects and what I would like to work on in the future. 
+3. Add a `now` page ([refer]). Inspired by [Derek Sivers]. Maybe also have a page that lists my current (personal) projects and what I would like to work on in the future. 
     1. Get listed on [nownownow].
 4. Add a tags page.
 5. Create a dark-mode for the [website].
+6. [Pinned] Posts? 
 
 
 
 [Derek Sivers]: https://sive.rs/nowff
 [nownownow]: https://nownownow.com/about
 [website]: https://trevorbonjour.me
+[refer]: https://derekkedziora.com/blog/dynamic-now-page
+[Pinned]: https://www.amitmerchant.com/implementing-pinned-posts-in-jekyll/
