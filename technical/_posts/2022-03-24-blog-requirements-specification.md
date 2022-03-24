@@ -16,6 +16,7 @@ I won't go into as much detail as a SRS. For now, I will list a bunch of feature
 4. Add a tags page.
 5. Create a dark-mode for the [website].
 6. [Pinned] Posts? 
+7. Add a [last modified] date on top of post date.
 
 
 
@@ -24,3 +25,4 @@ I won't go into as much detail as a SRS. For now, I will list a bunch of feature
 [website]: https://trevorbonjour.me
 [refer]: https://derekkedziora.com/blog/dynamic-now-page
 [Pinned]: https://www.amitmerchant.com/implementing-pinned-posts-in-jekyll/
+[last modified]: https://tomkadwill.com/adding-last-modified-date-to-jekyll
