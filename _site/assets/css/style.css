@@ -91,9 +91,9 @@ li > ul, li > ol { margin-bottom: 0; }
 h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
 /** Links */
-a { color: #2a7ae2; text-decoration: none; }
-a:visited { color: #1756a9; }
-a:hover { color: #111111; text-decoration: underline; }
+a { color: #1bbbbb; text-decoration: none; }
+a:visited { color: #1bbbbb; }
+a:hover { color: #111111; text-decoration: none; }
 .social-media-list a:hover, .pagination a:hover { text-decoration: none; }
 .social-media-list a:hover .username, .pagination a:hover .username { text-decoration: underline; }
 
@@ -151,6 +151,7 @@ table td { border: 1px solid #e8e8e8; }
 .site-nav input:checked ~ .trigger { display: block; padding-bottom: 5px; }
 .site-nav .page-link { color: #111111; line-height: 1.5; display: block; padding: 5px 10px; margin-left: 20px; }
 .site-nav .page-link:not(:last-child) { margin-right: 0; }
+.site-nav .page-link:hover { color: #111111; text-decoration: none; }
 @media screen and (min-width: 600px) { .site-nav { position: static; float: right; border: none; background-color: inherit; }
   .site-nav label[for="nav-trigger"] { display: none; }
   .site-nav .menu-icon { display: none; }
@@ -193,7 +194,9 @@ table td { border: 1px solid #e8e8e8; }
 
 .post-meta { font-size: 14px; color: #828282; }
 
-.post-link { # display: block; font-size: 1.25rem; }
+.post-link { # display: block; font-size: 1.25rem; color: #828282; }
+.post-link:visited { color: #828282; }
+.post-link:hover { color: #111111; text-decoration: none; }
 
 /** Posts */
 .post-header { margin-bottom: 30px; }

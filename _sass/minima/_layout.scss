@@ -84,6 +84,10 @@
       margin-right: 0;
     }
     margin-left: 20px;
+    &:hover {
+    color: $link-hover-color;
+    text-decoration: none;
+  }
   }
 
   @media screen and (min-width: $on-medium) {
@@ -228,6 +232,14 @@
 .post-link {
   # display: block;
   @include relative-font-size(1.25);
+  color: $brand-color;
+  &:visited {
+    color: $brand-color;
+  }
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: none;
+  }
 }
 
 
