@@ -6,4 +6,4 @@ permalink: /about/
 
 Know more about me [here].
 
-[here]: https://trevorbonjour.me
+[here]: https://tbonjour.github.io
